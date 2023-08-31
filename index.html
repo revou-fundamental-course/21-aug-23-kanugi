@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <title>Kanikayudha Tantyo Nugroho</title>
+</head>
+<body>
+
+  <!--Header-->
+  <header>
+    <div class="container">
+      <a href="#home" class="logo-header">
+        <img src="assets/Screenshot_2023-08-31_103925-removebg-preview.png" alt="logo" width="45">
+      </a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#ourProfile">Our Profile</a></li>
+        <li><a href="#achievement">Achievement</a></li>
+        <li><a href="#messageUs">Message Us</a></li>
+      </ul>
+      <label for="check" class="mobile-menu"><i class="fas fa-bars fa-2x"></i></label>
+    </div>
+  </header>
+
+  <!--sidebar-->
+  <input type="checkbox" id="check">
+		<div class="sidebar">
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#ourProfile">Our Profile</a></li>
+				<li><a href="#achievement">Achievement</a></li>
+				<li><a href="#messageUs">Message Us</a></li>
+			</ul>
+		</div>
+
+  <section class="jumbotron">
+    <h1>Hi, Welcome To Website</h1>
+    <p>Ini adalah website latihan pertama</p>
+  </section>
+
+  <!--Our Facilities Section-->
+  <section>
+    <h1>Our Facilitation</h1>
+    <div class="row">
+        <div class="column">
+            <img src="assets/Yogyakarta_Indonesia_Tugu-Yogyakarta-02.jpg" class="circle">
+            <p>Tourism Objects</p>
+        </div>
+        <div class="column" >
+            <img src="assets/b645ea73-educational-tourist-spot-in-yogyakarta.jpg" class="circle">
+            <p>Culture</p>
+        </div>
+        <div class="column" >
+            <img src="assets/gudeg-2.jpg" class="circle">
+            <p>Food</p>
+        </div>
+    </div>
+  </section>
+
+  <!-- Our Profile -->
+  <section id="ourProfile">
+    <div class="profile" id="profile">
+      <h1>About</h1>
+      <p>Yogyakarta City is located in the south part of Java Island and it is neighboring to Center Java Province. It is also bordering to the Indian Ocean! The region is also known for its karst mountains, located in the south part of it (Gunungkidul Regency). When it comes to nuance, the region feels soothing and welcoming. Thanks to the nice local people and their friendliness. As for nature, the region has various types of landscapes. That means visitors can explore both natural attractions and downtown freely during the visit. The accommodation is reliable, as well.</p>
+    </div>
+  </section>
+
+   <!-- Form -->
+  <section id="messageUs">
+    <hr>
+    <h1>Message Us</h1>
+    <div class="message1">
+      <form name="messageForm">
+        <div class="formLabel">
+          <label for="name">Nama</label><br>
+          <label for="birthday">Tanggal Lahir</label><br>
+          <label for="gender">Jenis Kelamin</label><br>
+          <label for="message">Pesan</label><br>
+        </div>
+        <div class="formInput">
+          <input type="text" name="name" id="name"><br>
+          <input type="date" name="birthday" id="birthday"><br>
+          <input type="radio" name="gender" id="gender" value="Laki-laki">
+          <label for="Laki-laki" name="gender" id="gender">Laki-laki</label>
+          <input type="radio" name="gender" id="gender" value="Perempuan">
+          <label for="Perempuan" name="gender" id="gender">Perempuan</label><br>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea><br>
+          <button onclick="return validateForm()" type="button">Submit</button>
+        </div>
+      </form>
+
+      <div class="validForm">
+        <p><b>Current time :</b><span id="currentTime"></span></p>
+        <br>
+        <br>
+        <p><b>Nama :</b><span id="senderName"></span></p>
+        <p><b>Tanggal Lahir :</b><span id="senderBirthday"></span></p>
+        <p><b>Jenis Kelamin :</b><span id="senderGender"></span></p>
+        <p><b>Pesan :</b><span id="senderMessages"></span></p>
+      </div>
+    </div>
+  </section>
+  <hr>
+
+  <!--footer-->
+  <footer>
+    Created By Kanikayudha
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
